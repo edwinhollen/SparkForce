@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>SparkForce</title>
+		<style>
+			.container{
+				max-width: 800px;
+				margin: 0 auto;
+			}
+			#canvas{
+				display: block;
+				min-width: 100%;
+				max-height: 100%;
+				width: auto;
+				height: auto;
+				image-rendering: pixelated;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<canvas id="canvas"></canvas>
+		</div>
+		<script src="chance.min.js"></script>
+		<script src="sparkforce.js"></script>
+		<script defer>
+			'use strict';
+			var sparkForce = new SparkForce(document.querySelector('#canvas'));	
+		</script>
+	</body>	
+</html>
+	
